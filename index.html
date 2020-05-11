@@ -8,170 +8,230 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<style>
-    
-  
-    </style>
+</head>
+<style type="text/css">
+  .projects{
+    background-color: #852145;
+    height: 150px;
+    padding: 50px;
+    color: white;
+  }
+  .footer{
+    padding: 10px;
+    background-color: black;
+    height: 400px;
+  }
+  .fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 30px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+</style>
 <body>
-    
-  
-  <nav class="navbar navbar-expand-sm bg-light navbar-light">
-    <a class="navbar-brand" href="#">Parkash suthar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Completed Project <span class="badge badge-success">1</span>
-            <span class="sr-only">unread messages</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Continue Project <span class="badge badge-primary">1</span>
-            <span class="sr-only">unread messages</span></a>
-        </li> 
-        <li class="nav-item">
-            <a class="nav-link" href="#">Failed Project <span class="badge badge-danger">0</span>
-              <span class="sr-only">unread messages</span></a>
-          </li>    
-      </ul>
-    </div>  
-  </nav>
-  
-  <div class="container " style="margin-top:30px">
-    <div class="row">
-      <div class="col-sm-4" style="text-align: center;">
-        <h2 style="text-align: left;">About Me</h2>
-        <h5 class="Display 1">Parkash suthar</h5>
-        <div class="container">
-            <img class="img-fluid img-thumbnail" src="images/profile.jpeg" width="300" height="200">
-        </div>
-        <p>Hello,<br>This is Parkash, I am web developer.</p>
-
-        <ul class="list-group">
-          <li class="list-group-item active">Skills</li>
-          <li class="list-group-item">C Basic</li>
-          <li class="list-group-item">Java intermediate</li>
-          <li class="list-group-item">Python</li>
-          <li class="list-group-item">mySQL</li>
-          <li class="list-group-item">HTML5</li>
-          <li class="list-group-item">CSS3</li>
-          <li class="list-group-item">Bootstrap</li>
-          <li class="list-group-item">Kotlin</li>
-          <li class="list-group-item">JavaScript</li>
-          <li class="list-group-item">Android app development</li>
-        </ul>
-        <hr>
-        <ul class="list-group">
-          <li class="list-group-item active"><h3 class="">Connect with me</h3></li>
-          <li class="list-group-item">
-            <p>Here are the others social plateforms, through which you can connect with me.</p>
-            <ul class="list-inline">
-          <li class="">
-            <a  href="https://github.com/ParkashSuther">Github</a>
-          </li>
-          <li class="">
-            <a  href="#">Linkedin </a>
-          </li>
-          
-        </ul>
-          </li>
-        </ul>
-        
-        <hr class="d-sm-none">
+    <div>
+      <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-sm navbar-dark fixed" style="background-color:#852145; ">
+          <a class="navbar-brand" href="#">Parkash suthar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <div class="dropdown ">
+                  <button type="button" class="btn-light dropdown-toggle col-sm-12" data-toggle="dropdown" style="border-radius: 20px;">
+                   Projects
+                  </button>
+                    <div class="dropdown-menu" style="background-color:#852145;color: white; ">
+                      <a class="dropdown-item" href="#">Data structure</a>
+                      <a class="dropdown-item" href="#">Java</a>
+                      <a class="dropdown-item" href="#">JavaScript</a>
+                      <a class="dropdown-item" href="#">Web Development</a>
+                    </div>  
+                
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown ">
+                <button type="button" class="btn-light dropdown-toggle col-sm-12" data-toggle="dropdown"style="border-radius: 20px;">
+                 Book composing
+                  </button>
+                <div class="dropdown-menu" style="background-color:#852145;color: white; ">
+                  <a class="dropdown-item" href="#">Sindhi</a>
+                  <a class="dropdown-item" href="#">Urdu</a>
+                  <a class="dropdown-item" href="#">English</a>
+                </div>
+                  </div>
+              </li>
+              
+            </ul>
+          </div>  
+        </nav>
+    </div>
+    <div class="container">
+      <div class="container-fluid my-2" style="text-align: center;">
+        <img class="img-fluid img-thumbnail" src="images/profile.jpeg" width="300" height="200">
       </div>
-      <div class="col-sm-8">
-        <h2>Projects</h2>
-        <div class="card my-2">
-            <h5 class="card-header bg-primary">Skin disease diagnose using Machine learning with your smart phone</h5>
-            <div class="card-body">
-              <h5 class="card-title">Supervisor : Dr.Mansoor Ebhrahim, Jan,20, 2020</h5>
-              <p class="card-text">The Project is basically used to identify the disease by using image processing so the patient get their disease details easily and the apps will also be keep updated in terms of data so that the results will always be accurate and if any disease details is not mentioned or the app is not able to recognize any image so the user can also give suggestion so afterwards it will added to the system after confirming by the doctors.</p>
-              <div class="row">
-                <div class="col-md-6">
-                    <h6>Progress</h6>
-                </div>
-                <div class="col-md-6">
-                    <div class="">
-                        <h6>Duration of project: <span style="color: grey;">1 Year</span></h6>
-                    </div>
-                </div>
-            </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 52%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">52%</div>
-              </div>
-            </div>
+      <div class="container">
+        <h1>About me</h1>
+        <p>I am really excited to share my experience with you. i am basically a web developer, and working from 1 year on Asp.net technology. I created lot of project on it. it will be more boost my learning perspective as well as to my     career, when i will work with you. when ever i took any project, i give it my 100% to the project.</p>
+      </div>
+
+<!-- quote .........quote............. -->
+
+      <div class="container my-5">
+        <div class="quoteBox" style="width: 100%;height: 300px; border:5px dotted #852145; border-radius: 100px; padding:10px; text-align: center; font-family: sans-serif;">
+          <h1>Quote of Day</h1>
+          <h4>Here we will put some text inside this box</h4>
         </div>
-        
+      </div>
 
-        <!-- Saylani welfare project  -->
+<!-- projects .........projects.........projects........projects........projects.....................projects..... -->
 
+    </div>
+    <div class="projects">
+      <h1>Projects</h1>
+    </div>
+    <div class="container my-5">
 
-        <div class="card my-2">
-            <h5 class="card-header bg-success">Saylani walfare Website</h5>
-            <div class="card-body">
-              <h5 class="card-title">by self, May,4,2020</h5>
-                <div class="">
-                    <img class="img-fluid mb-2" src="images/saylani.PNG" width="700" height="300">
-                </div>
-                <p>This project is given by M.Ali mughal at Web and mobile application development course on Apr, 27, 2020. In this project we have to design a template of given website using HTML5, CSS and Bootstrap.</p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h6>Progress</h6>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="">
-                            <h6>Duration of project: <span style="color: grey;">7 Days</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
-                </div>
-                <a href=" https://parkashsuther.github.io/saylaniwelfare/">Go to project</a> 
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="box-shadow: 3px 3px gray">
+            <div class="card-header">Saylani welfare</div>
+            <div class="card-body" style="text-align: center;">
+              <p style="text-align: left;">This is a very simple web template which created with html, css, bootstrap and it is hosted on github.</p>
+              <button type="button" class="btn btn-light">
+                <i class="fas fa-code"> </i>
+                <a href="#">Go to Code</a>
+              </button>
+              <button type="button" class="btn btn-light">
+                <i class="fas fa-cloud"> </i>
+                <a href="#">Go to project</a>
+              </button>
+              
             </div>
+          </div>
         </div>
-
-        <!-- Data structure project  -->
-
-          <div class="card my-2">
-            <h5 class="card-header bg-success">Data structure </h5>
-            <div class="card-body">
-              <h5 class="card-title">by self, sep,1,2019</h5>
-                <div class="" style="text-align: center;">
-                    <!-- <img class="img-fluid mb-2" src="images/datastructure.PNG" width="700" height="300"> -->
-                    <iframe width="600" height="315" src="https://www.youtube.com/embed/AzjMDhzYQZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <p>This project is given by Prof. Israr allowfullscreeni, to create animation on data structure that data 
-                  is store on stack and different type data structre like . Stack, Queue and so on.
-                </p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h6>Progress</h6>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="">
-                            <h6>Duration of project: <span style="color: grey;">7 Days</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
-                </div>
-                <a href=" https://parkashsuther.github.io/saylaniwelfare/">Go to project</a> 
+               <div class="col-md-3">
+          <div class="card" style="box-shadow: 3px 3px gray">
+            <div class="card-header">Data Structure</div>
+            <div class="card-body" style="text-align: center;">
+              <p style="text-align: left;">This is a very simple web template which created with html, css, bootstrap and it is hosted on github.</p>
+              <button type="button" class="btn btn-light">
+                <i class="fas fa-code"> </i>
+                <a href="#">Go to Code</a>
+              </button>
+              <button type="button" class="btn btn-light">
+                <i class="fas fa-cloud"> </i>
+                <a href="#">Go to project</a>
+              </button>
+              
             </div>
+          </div>
         </div>
-
-        <!-- end of data structure project -->
+               <div class="col-md-3">
+          <div class="card" style="box-shadow: 3px 3px gray">
+            <div class="card-header">Java</div>
+            <div class="card-body" style="text-align: center;">
+              <p style="text-align: left;">This is a very simple web template which created with html, css, bootstrap and it is hosted on github.</p>
+              <button type="button" class="btn btn-light">
+                <i class="fas fa-code"> </i>
+                <a href="#">Go to Code</a>
+              </button>
+              <button type="button" class="btn btn-light">
+                <i class="fas fa-cloud"> </i>
+                <a href="#">Go to project</a>
+              </button>
+              
+            </div>
+          </div>
+        </div>
+               <div class="col-md-3">
+          <div class="card" style="box-shadow: 3px 3px gray">
+            <div class="card-header">Final year Project</div>
+            <div class="card-body" style="text-align: center;">
+              <p style="text-align: left;">This is a very simple web template which created with html, css, bootstrap and it is hosted on github.</p>
+              <button type="button" class="btn btn-light">
+                <i class="fas fa-code"> </i>
+                <a href="#">Go to Code</a>
+              </button>
+              <button type="button" class="btn btn-light">
+                <i class="fas fa-cloud"> </i>
+                <a href="#">Go to project</a>
+              </button>
+              
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
-  </div>
-  
-  <div class="jumbotron text-center" style="margin-bottom:0">
-    
-  </div>
-  
+
+
+<!-- footer ...........................footer......footer.........footer.................. -->
+
+    <div class="footer" style="color: white;">
+        <div class="container my-2">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Contact Me</h3>
+              <p>Parkash suther</p>
+              <!-- <br> -->
+              <p><i class="fa fa-google"> </i><span style="opacity: 0.9">parkashsuther@gmail.com</span></p>
+              <p><a href="#" class="fa fa-facebook"></a><span style="opacity: 0.9">www.facebook.com/parkashkumar</span></p>
+              <p><i class="fa fa-instagram"> </i><span style="opacity: 0.9">Instagram</span></p>
+              <p><i class="fa fa-linkedin"> </i><span style="opacity: 0.9">Linkedin</span></p>
+              <p><i class="fa fa-youtube"> </i><span style="opacity: 0.9">You tube</span></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Subscribe</h3>
+              <p>Subscribe our channel to get latest update on your personal account.</p>
+              <input type="text" placeholder="Your Name" class="form-control m-1" id="usr">
+              <input type="Email" placeholder="Your Email" class="form-control m-1" id="usr">
+              <button type="button" class="btn btn-primary m-1 my-2">Subscribe</button>
+            </div>
+            <div class="col-md-4">
+              <h3>Feedback</h3>
+              <p>Please give me feedback to improve my services</p>
+              <p>~ your name always be unknown, so feel free to comment ~ </p>
+              <textarea class="form-control" rows="5" id="comment">Comment</textarea>
+              <button type="button" class="btn btn-primary m-1 my-2">Subscribe</button>
+            </div>
+          </div>
+        </div>
+    </div>
 </body>
 </html>
